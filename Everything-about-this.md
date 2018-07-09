@@ -59,3 +59,4 @@ function Wizard() {
 var merlin = new Wizard(); // this is set to an empty object {}. Returns `this` implicitly.
 merlin.castSpell() // returns "KABOOM";
 ```
+
