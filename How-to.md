@@ -18,7 +18,7 @@ if (!Array.isArray(array) || !array.length) {
 
 
 
-## 2. How to handle undefined in Javascript
+## 2. How to handle **undefined** in Javascript
 From [dmitripavlutin.com](https://dmitripavlutin.com/7-tips-to-handle-undefined-in-javascript/) by Dmitri Pavlutin
 
 In Javascript:
@@ -175,4 +175,16 @@ typeof nothing === 'undefined'; // true
 ```js
 typeof undefined; // undefined
 typeof null;   // object
+```
+
+## 3. How to make a JS callback?
+```js
+function doHomework(subject, callback) {
+  alert(`Starting my ${subject} homework.`);
+  callback();
+}
+
+doHomework('math', function() {
+  alert('Finished my homework');
+});
 ```
